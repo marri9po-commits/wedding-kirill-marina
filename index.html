@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Кирилл & Марина</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <img src="images/heart.png" alt="heart" class="heart-img">
+</div>
+
+<div class="fixed-date">
+  03<br>06<br>2026
+</div>
+
+<div class="fixed-initials">
+  K · M
+</div>
+
+<section class="cover">
+
+  <div class="cover-bg"></div>
+
+  <span class="line left"></span>
+  <span class="line right"></span>
+
+  <div class="cover-content">
+    <h1 class="names">
+      КИРИЛЛ<br>
+      <span class="amp">&</span><br>
+      МАРИНА
+    </h1>
+
+    <p class="subtitle">мы женимся</p>
+
+    <div class="description-wrap">
+	<p class="description">
+    Дорогие гости!<br><br>
+    В нашей жизни скоро состоится важное событие — наша свадьба!<br>
+    Мы будем счастливы разделить его с вами.
+  </p>
+</div>
+
+    <button class="music-toggle" id="musicToggle">
+      — включить музыку
+    </button>
+  </div>
+
+  <div class="side-note">СВАДЕБНЫЙ ДЕНЬ</div>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+</section>
+
+<!-- ================= CALENDAR ================= -->
+
+<section class="calendar">
+  <h2 class="calendar-title">Июнь 2026</h2>
+  <div class="calendar-image">
+  <img src="images/calendar.png" alt="Календарь">
+  </div>
+  <p class="calendar-note">
+  Без вас наша свадьба не будет такой же душевной и памятной.<br>
+  Приглашаем вас отметить этот день вместе с нами!
+</p>
+</section>
+
+<!-- ================= LOCATION ================= -->
+
+<section class="location">
+  <h2>Локация</h2>
+
+  <p class="location-caption">
+    Место, где начнётся наша семейная история
+  </p>
+
+  <div class="locations">
+
+<div class="place" onclick="openMap(event, 'ceremony')">
+  <h3>Регистрация</h3>
+  <p>
+    Дворец бракосочетания «Екатерининский зал»<br>
+    ул. Офицерская, 47, Краснодар
+  </p>
+
+  <div class="place-photo">
+    <img src="images/location-registry.jpg" alt="">
+  </div>
+
+  <a 
+    class="map-link" 
+    href="#" 
+    onclick="event.stopPropagation(); openMap(event, 'ceremony')"
+  >
+    Открыть на карте
+  </a>
+</div>
+
+
+<div class="place" onclick="openMap(event, 'banquet')">
+  <h3>Банкет</h3>
+  <p>
+    Ресторан «Dvin Hall»<br>
+    ул. Офицерская, 49, Краснодар
+  </p>
+
+  <div class="place-photo">
+    <img src="images/location-bancet.jpg" alt="">
+  </div>
+
+  <a 
+    class="map-link" 
+    href="#" 
+    onclick="event.stopPropagation(); openMap(event, 'banquet')"
+  >
+    Открыть на карте
+  </a>
+</div>
+
+  </div>
+</section>
+
+<!-- ================= TIMELINE ================= --!>
+
+<section class="timeline">
+
+  <h2 class="timeline-title">Программа дня</h2>
+
+  <div class="event">
+
+    <div class="event-marker"></div>
+
+    <div class="event-content">
+      <strong>14:30</strong>
+      <span>Сбор гостей у ЗАГСа</span>
+    </div>
+
+    <div class="event-illustration">
+      <img src="images/timeline-1.png" alt="">
+    </div>
+
+  </div>
+
+  <div class="event">
+
+    <div class="event-marker"></div>
+
+    <div class="event-content">
+      <strong>15:00</strong>
+      <span>Церемония</span>
+    </div>
+
+    <div class="event-illustration">
+      <img src="images/timeline-2.png" alt="">
+    </div>
+
+  </div>
+
+  <div class="event">
+
+    <div class="event-marker"></div>
+
+    <div class="event-content">
+      <strong>16:30</strong>
+      <span>Банкет</span>
+    </div>
+
+    <div class="event-illustration">
+      <img src="images/timeline-3.png" alt="">
+    </div>
+
+  </div>
+
+  <div class="event last">
+
+    <div class="event-marker"></div>
+
+    <div class="event-content">
+      <strong>23:00</strong>
+      <span>Завершение вечера</span>
+    </div>
+
+    <div class="event-illustration">
+      <img src="images/timeline-4.png" alt="">
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= DRESS CODE ================= 
+
+<section class="dresscode" data-aos="fade-up">
+  <h2>Дресс-код</h2>
+
+  <p class="dress-intro">
+    Мы будем рады, если ваш образ поддержит общую атмосферу вечера
+  </p>
+
+  <div class="dress-inner">
+    <div class="dress-palette">
+
+      <div class="color-card" style="background:#496677;">
+        <span class="color-label">Dusty Blue</span>
+      </div>
+
+      <div class="color-card" style="background:#9FB2CD;">
+        <span class="color-label">Soft Blue</span>
+      </div>
+
+      <div class="color-card" style="background:#ABAC5A;">
+        <span class="color-label">Muted Olive</span>
+      </div>
+
+      <div class="color-card" style="background:#CA9BAA;">
+        <span class="color-label">Deep Pink</span>
+      </div>
+
+      <div class="color-card" style="background:#271203;">
+        <span class="color-label">Dark Chocolate</span>
+      </div>
+
+      <div class="color-card" style="background:#F2E6B1;">
+        <span class="color-label">Warm Linen</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+--!>
+
+<!-- ================= ДЕТАЛИ ================= -->
+<section class="notes" data-aos="fade-up">
+  <h2 class="timeline-title">Детали</h2>
+
+  <div class="notes-cards">
+    <div class="note-card wishes">
+      <h3>Пожелания</h3>
+      <p class="section-text">
+        Просим не дарить цветы: нам будет жаль, если они завянут за время нашего отсутствия
+		— вместо них мы будем рады бутылочке алкоголя на ваш вкус.<br><br>
+        От всего сердца просим вас воздержаться от криков "Горько!" и сохранить атмосферу уютного семейного таинства.
+      </p>
+    </div>
+
+    <div class="note-card memories">
+      <h3>Воспоминания</h3>
+      <p class="section-text">
+        Чтобы ни один трогательный момент этого дня не потерялся,
+        мы создали группу в Telegram, где вы сможете делиться фотографиями и видео.
+      </p>
+
+      <a href="https://t.me/+hN-70HELmC9jM2Y6" target="_blank" class="btn-telegram" aria-label="Перейти в Telegram">
+        <i class="fa-brands fa-telegram"></i>
+        Перейти в Telegram
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL COVER ================= -->
+<section class="final-cover reveal">
+
+  <div class="final-overlay"></div>
+
+  <div class="final-content">
+    <h2>Встретимся через</h2>
+
+    <div class="timer">
+      <div class="time">
+        <div>
+          <span id="days">00</span>
+          <small>дней</small>
+        </div>
+        <div>
+          <span id="hours">00</span>
+          <small>часов</small>
+        </div>
+        <div>
+          <span id="minutes">00</span>
+          <small>минут</small>
+        </div>
+        <div>
+          <span id="seconds">00</span>
+          <small>секунд</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
