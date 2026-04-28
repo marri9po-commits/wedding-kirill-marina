@@ -363,7 +363,7 @@ h2::after,
 
   .cover-content {
     margin: 0;
-    padding-top: 90px;
+    padding-top: 65px;
     padding-left: 20px;
   }
 
@@ -374,24 +374,28 @@ h2::after,
 
   .names .amp {
     font-size: 42px;
+	top: -8px; 
   }
 
   .subtitle {
     text-align: left;
-    margin-top: 36px;
-	font-size: 17px;
+    margin-top: 30px;
+	font-size: 14px;
+	padding-left: 3px;
   }
 
   .description {
-	font-size: 16px;
+	font-size: 14px;
     text-align: left;
     margin-top: 36px;
     max-width: 320px;
+	padding-left: 3px;
   }
 
   .music-toggle {
     text-align: left;
     margin-top: 48px;
+	font-size: 13px;
   }
 
   .side-note {
@@ -510,7 +514,7 @@ h2::after,
 
   text-align: center;
   opacity: 0.85;
-  font-size: 16px;
+  font-size: 14px;
   max-width: 320px;
   margin-top: 60px;
   }
@@ -614,6 +618,7 @@ h2::after,
     sepia(18%)
     contrast(0.9)
     brightness(1.05);
+	display: block;
 }
 
 
@@ -662,7 +667,7 @@ h2::after,
 
   .location-caption {
     margin: -10px auto 48px;
-    font-size: 16px;
+    font-size: 14px;
     max-width: 320px;
   }
 
@@ -685,7 +690,7 @@ h2::after,
     margin-left: auto;
     margin-right: auto;
     max-width: 280px;
-	font-size: 16px;
+	font-size: 14px;
   }
 
   .map-link {
@@ -832,7 +837,7 @@ h2::after,
 }
 
 .event-content span {
-  font-size: 16px;
+  font-size: 14px;
   opacity: 0.6;
 }
 
@@ -895,7 +900,7 @@ h2::after,
   }
 
   .event-content span {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -1139,7 +1144,7 @@ h2::after,
 }
 
 .btn-telegram i {
-  font-size: 16px;
+  font-size: 13px;
   opacity: 0.7;
 }
 
@@ -1163,11 +1168,12 @@ h2::after,
 
     margin-left: auto;
     margin-right: auto;
-	font-size: 16px;
+	font-size: 14px;
   }
   
   .btn-telegram {
-    font-size: 14px; /* ← ВОТ ЗДЕСЬ МЕНЯЕШЬ ШРИФТ */
+    font-size: 13px; /* ← ВОТ ЗДЕСЬ МЕНЯЕШЬ ШРИФТ */
+	  letter-spacing: 0.15em;
   }
 }
 
@@ -1238,7 +1244,7 @@ h2::after,
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("images/final-cover.jpg");
+  background-image: url("final-cover.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.25;
